@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Popees — Sample Site</title>
+  <meta name="description" content="Sample Popees-like landing page" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <rect width="24" height="24" rx="6" fill="#5B21B6" />
+          <text x="50%" y="55%" text-anchor="middle" fill="white" font-size="12" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto">P</text>
+        </svg>
+        <span>Popees <small class="muted">sample</small></span>
+      </a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <button id="connectWallet" class="btn btn-outline">Connect Wallet</button>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Colorful collectibles. Simple commerce.</h1>
+          <p class="lead">A small, fast landing page that showcases playful collectibles — built as a sample site inspired by popees.com.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Shop things</a>
+            <a class="btn btn-ghost" href="#features">Learn more</a>
+          </div>
+        </div>
+        <div class="hero-shot" aria-hidden>
+          <div class="card-grid">
+            <div class="card"><div class="thumb">🍪</div><h4>Cookie</h4></div>
+            <div class="card"><div class="thumb">🎈</div><h4>Balloon</h4></div>
+            <div class="card"><div class="thumb">🧸</div><h4>Teddy</h4></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>Why this site</h2>
+      <div class="grid">
+        <article>
+          <h3>Playful design</h3>
+          <p>Bright colors and simple illustrations keep the experience friendly and delightful.</p>
+        </article>
+        <article>
+          <h3>Fast and responsive</h3>
+          <p>Minimal assets and clean CSS for good performance across devices.</p>
+        </article>
+        <article>
+          <h3>Easy to extend</h3>
+          <p>Ready-to-edit HTML, CSS and a small JS file for interactivity or Web3 hooks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="products" class="container products">
+      <h2>Products</h2>
+      <div class="grid cards">
+        <div class="product">
+          <div class="thumb big">🍪</div>
+          <h4>Cookie</h4>
+          <p class="price">0.03 ETH</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+        <div class="product">
+          <div class="thumb big">🎈</div>
+          <h4>Balloon</h4>
+          <p class="price">0.02 ETH</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+        <div class="product">
+          <div class="thumb big">🧸</div>
+          <h4>Teddy</h4>
+          <p class="price">0.05 ETH</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Get in touch</h2>
+      <p>Use this as a starting point — wire up a backend, integrate a shop, or add web3 wallet interactions.</p>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — form disabled in sample.');">
+        <input type="email" placeholder="Your email" required />
+        <button class="btn">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2026 Popees Sample — built by jkyranjith-spec</small>
+      <nav class="footer-nav">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
